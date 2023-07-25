@@ -9,4 +9,5 @@ using namespace std;
 void main(){
 	cout<<"Hola mundo"<<endl;
 	cout<<"jajaj"<<endl;
+	for(int i=0; i<=3; i++) suma+=i;
 }

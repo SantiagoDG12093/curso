@@ -1,0 +1,22 @@
+//sensor
+byte trig=5;
+byte echo=6;
+float pulso;
+float distancia;
+
+void setup(){
+	pinMode(trig, OUTPUT);
+	pinMode(echo, INPUT);
+	Serial.begin(9600);
+	digitalWrite(Trig, LOW);
+}
+
+void loop(){
+	digitalWrite(Trig, HIGH);
+	delay(10);
+	digitalWrite(Trig, LOW); 
+	pulso = pulseIn(echo, LOW);
+	distancia = pulso/29.82*2;
+	Serial.print('Distancia: ');
+	Serial.println(distancia);
+}

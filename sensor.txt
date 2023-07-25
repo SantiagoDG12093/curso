@@ -5,9 +5,10 @@ float pulso;
 float distancia;
 
 void setup(){
+	Serial.begin(9600);
+	Serial.println("Sensor de distancia");
 	pinMode(trig, OUTPUT);
 	pinMode(echo, INPUT);
-	Serial.begin(9600);
 	digitalWrite(Trig, LOW);
 }
 

@@ -19,4 +19,5 @@ void loop(){
 	distancia = pulso/29.82*2;
 	Serial.print('Distancia: ');
 	Serial.println(distancia);
+	delay(2000);
 }
